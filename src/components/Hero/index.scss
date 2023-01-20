@@ -1,0 +1,67 @@
+@import "../../styles/colors";
+
+.hero {
+  &-content {
+    height: calc(100vh - 79px);
+    @media screen and (min-width: 992px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 3.125rem;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 9.375rem;
+    }
+    .hero-left,
+    .hero-right {
+      width: 100%;
+    }
+    .hero-right {
+      text-align: center;
+      @media screen and (min-width: 992px) {
+        text-align: left;
+      }
+      .hero-title {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 992px) {
+          font-size: 2.5rem;
+        }
+      }
+      .hero-desc {
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+        @media screen and (min-width: 992px) {
+          font-size: 1.125rem;
+          margin-bottom: 2.8125rem;
+        }
+      }
+      .hero-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.875rem;
+        @media screen and (min-width: 992px) {
+          justify-content: flex-start;
+        }
+        button {
+            cursor: pointer;
+        }
+        button:last-child {
+          display: flex;
+          align-items: center;
+          gap: 0.375rem;
+          background: none;
+          color: $primaryColor;
+          border: none;
+          svg {
+            width: auto;
+          }
+          span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
