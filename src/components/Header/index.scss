@@ -1,0 +1,57 @@
+@import "../../styles/colors";
+
+.header {
+  box-shadow: 0 -0.125rem 0.5rem rgba(0, 0, 0, 0.25);
+  @media screen and (min-width: 992px) {
+    box-shadow: none;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    .logo {
+      max-width: 10.625rem;
+    }
+    .navigation-wrapper {
+      .navigation {
+        display: none;
+        @media screen and (min-width: 992px) {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+        }
+        &-list {
+          display: flex;
+          gap: 1.25rem;
+        }
+        &-item {
+          a {
+            display: block;
+            width: calc(100% + 3px);
+          }
+        }
+        .button-group {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+          button {
+            cursor: pointer;
+          }
+          .theme-toggler-icon {
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+          }
+        }
+      }
+      .hamburger-icon {
+        @media screen and (min-width: 992px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
