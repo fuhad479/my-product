@@ -2,12 +2,14 @@
 
 .hero {
   &-content {
-    height: calc(100vh - 79px);
+    padding: 1rem 0;
     @media screen and (min-width: 992px) {
+      height: calc(100vh - 79px);
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
       gap: 3.125rem;
+      padding: 0;
     }
     @media screen and (min-width: 1200px) {
       gap: 9.375rem;
@@ -45,7 +47,7 @@
           justify-content: flex-start;
         }
         button {
-            cursor: pointer;
+          cursor: pointer;
         }
         button:last-child {
           display: flex;

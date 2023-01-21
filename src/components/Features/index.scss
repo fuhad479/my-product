@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+
+.features {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 6.25rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 9.375rem 0;
+  }
+  &-content {
+    .section-title {
+      text-align: center;
+      margin-bottom: 3.125rem;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 4.125rem;
+      }
+    }
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      margin-bottom: 2rem;
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1rem;
+      }
+      @media screen and (min-width: 992px) {
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 3.125rem;
+      }
+      .features-item {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+        .icon {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $primaryColor;
+          border-radius: 1.1875rem;
+          margin: 0 auto 1.5rem;
+          @media screen  and (min-width: 768px) {
+            margin: 0 0 1rem;
+          }
+          @media screen  and (min-width: 992px) {
+            margin: 0 0 1rem;
+          }
+        }
+        .feature-title {
+          margin-bottom: .625rem;
+        }
+      }
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
