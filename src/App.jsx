@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Management from "./components/Management";
 import CustomerSupport from "./components/CustomerSupport";
+import Collaborative from "./components/Collaborative";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <Management />
       <CustomerSupport />
+      <Collaborative />
     </>
   );
 }
