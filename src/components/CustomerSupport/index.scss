@@ -1,0 +1,62 @@
+@import '../../styles/colors';
+
+.customer-support {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 6.25rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 9.375rem 0;
+  }
+  &-content {
+    @media screen and (min-width: 992px) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+  &-left {
+    margin-bottom: 3.125rem;
+    @media screen and (min-width: 992px) {
+      width: 100%;
+    }
+  }
+  &-right {
+    @media screen and (min-width: 992px) {
+      width: 100%;
+    }
+    .subtitle {
+      margin-bottom: .5rem;
+    }
+    .section-title {
+      margin-bottom: 1rem;
+    }
+    .checkbox-list {
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        @media screen and (min-width: 992px) {
+          gap: 1.875rem;
+          &:not(:last-child) {
+            margin-bottom: 1.875rem;
+          }
+        }
+        .icon {
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: $primaryColor;
+          border-radius: .8125rem;
+        }
+        p {
+          width: calc(100% - 65px);
+        }
+      }
+    }
+  }
+}
