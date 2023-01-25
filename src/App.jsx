@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Management from "./components/Management";
 import CustomerSupport from "./components/CustomerSupport";
 import Collaborative from "./components/Collaborative";
+import Members from "./components/Members";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Management />
       <CustomerSupport />
       <Collaborative />
+      <Members />
     </>
   );
 }
