@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+
+.pricing-card {
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  .plan-title {
+    font-size: 1.5rem;
+  }
+  .plan-brief {
+    margin-bottom: 1rem;
+  }
+  .pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    .price {
+      font-size: 4.75rem;
+      font-weight: 700;
+      color: $primaryColor;
+    }
+    .plan-duration {
+      text-align: left;
+      span {
+        display: block;
+        &:first-child {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $primaryColor;
+        }
+      }
+    }
+  }
+  ul {
+    li {
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+  }
+  button {
+    margin: 2.5rem auto 0;
+    cursor: pointer;
+  }
+}

@@ -12,8 +12,8 @@ import "./index.scss";
 
 export default function Blogs() {
   const sliderBreakpoints = {
-    ["768"]: { slidesPerView: 2 },
-    ["992"]: { slidesPerView: 3 },
+    "768": { slidesPerView: 2 },
+    "992": { slidesPerView: 3 },
   };
 
   return (

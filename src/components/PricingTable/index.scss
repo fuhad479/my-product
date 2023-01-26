@@ -1,0 +1,46 @@
+@import '../../styles/colors';
+
+.pricing-table {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 6.25rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 9.375rem 0;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .pricing-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px;
+    }
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 32px;
+    }
+    .pricing-item {
+      &:nth-child(2) {
+        .pricing-card {
+          background: $primaryColor;
+          color: $white;
+          .price, .currency {
+            color: $white;
+          }
+          button {
+            background: $white;
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}

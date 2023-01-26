@@ -6,6 +6,7 @@ import CustomerSupport from "./components/CustomerSupport";
 import Collaborative from "./components/Collaborative";
 import Members from "./components/Members";
 import Blogs from "./components/Blogs";
+import PricingTable from "./components/PricingTable";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Collaborative />
       <Members />
       <Blogs />
+      <PricingTable />
     </>
   );
 }
