@@ -1,0 +1,47 @@
+.footer {
+  padding: 3.125rem 0;
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .social-icons {
+      .logo {
+        margin-bottom: 1.5rem;
+        svg {
+          width: auto;
+        }
+      }
+      .icons {
+        display: flex;
+        gap: 16px;
+        .icon {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #EDFFFC;
+          cursor: pointer;
+        }
+      }
+    }
+    .footer-menu {
+      &-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+      }
+    }
+    .newsletter-form {
+      input {
+        width: 100%;
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        padding: .625rem .9375rem;
+        margin-bottom: 1.25rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

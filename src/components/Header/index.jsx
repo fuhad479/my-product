@@ -1,4 +1,4 @@
-import { HamburgerMenuIcon, SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon, SunIcon } from "@radix-ui/react-icons";
 import { ReactComponent as LightLogo } from "../../assets/logo-light.svg";
 
 import Button from "../Button";
