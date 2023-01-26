@@ -1,0 +1,32 @@
+.blogs {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 6.25rem 0;
+  }
+  @media screen and (min-width: 992px) {
+    padding: 9.375rem 0;
+  }
+  &-content {
+    .section-title {
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      margin-bottom: 2rem;
+    }
+    .swiper-pagination {
+      position: relative;
+      margin-top: 1.875rem;
+      @media screen and (min-width: 768px) {
+        margin-top: 3.125rem;
+      }
+      &-bullet {
+        width: 16px;
+        height: 16px;
+        background: gray;
+        &-active {
+          background: #02897A;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.blog-card {
+  border-radius: 8px;
+  overflow: hidden;
+  .thumbnail {
+    object-fit: cover;
+  }
+  &-content {
+    padding: 1.5rem;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 8px;
+    & > div {
+      & * {
+        display: inline;
+      }
+    }
+  }
+}

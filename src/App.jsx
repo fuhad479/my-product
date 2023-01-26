@@ -5,6 +5,7 @@ import Management from "./components/Management";
 import CustomerSupport from "./components/CustomerSupport";
 import Collaborative from "./components/Collaborative";
 import Members from "./components/Members";
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CustomerSupport />
       <Collaborative />
       <Members />
+      <Blogs />
     </>
   );
 }
