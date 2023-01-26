@@ -7,6 +7,7 @@ import Collaborative from "./components/Collaborative";
 import Members from "./components/Members";
 import Blogs from "./components/Blogs";
 import PricingTable from "./components/PricingTable";
+import Review from './components/Review'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Members />
       <Blogs />
       <PricingTable />
+      <Review />
     </>
   );
 }

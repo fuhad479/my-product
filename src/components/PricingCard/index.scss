@@ -26,18 +26,18 @@
       span {
         display: block;
         &:first-child {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: $primaryColor;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $primaryColor;
         }
       }
     }
   }
   ul {
     li {
-        &:not(:last-child) {
-            margin-bottom: 1rem;
-        }
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
   }
   button {
