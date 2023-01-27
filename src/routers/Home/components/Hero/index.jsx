@@ -1,10 +1,10 @@
 import { PlayIcon } from "@radix-ui/react-icons";
+import { ReactComponent as SocialMedia } from "src/assets/social-media.svg";
 
-import { ReactComponent as HeroIllustration } from "../../assets/social-media.svg";
+import Button from "src/components/Button";
 
 import "./index.scss";
 
-import Button from "../Button";
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <div className="hero-left">
-            <HeroIllustration width="100%" height="100%" />
+            <SocialMedia width="100%" height="100%" />
           </div>
           <div className="hero-right">
             <h1 className="hero-title">Work at the speed of thought</h1>

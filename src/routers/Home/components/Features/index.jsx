@@ -1,10 +1,10 @@
-import { ReactComponent as PointerIcon } from "../../assets/pointer.svg";
-import { ReactComponent as StumbleuponIcon } from "../../assets/stumbleupon.svg";
-import { ReactComponent as HeartIcon } from "../../assets/heart.svg";
-import { ReactComponent as HourglassIcon } from "../../assets/hourglass.svg";
+import { ReactComponent as PointerIcon } from "src/assets/pointer.svg";
+import { ReactComponent as StumbleuponIcon } from "src/assets/stumbleupon.svg";
+import { ReactComponent as HeartIcon } from "src/assets/heart.svg";
+import { ReactComponent as HourglassIcon } from "src/assets/hourglass.svg";
 
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
+import SectionTitle from "../../../../components/SectionTitle";
+import Button from "../../../../components/Button";
 
 import "./index.scss";
 

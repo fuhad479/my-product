@@ -1,7 +1,7 @@
-import { ReactComponent as SearchEngines } from "../../assets/search-engines.svg";
+import { ReactComponent as SearchEngines } from "src/assets/search-engines.svg";
 import { CheckIcon } from "@radix-ui/react-icons";
 
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../../../components/SectionTitle";
 
 import "./index.scss";
 

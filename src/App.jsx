@@ -1,30 +1,18 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Management from "./components/Management";
-import CustomerSupport from "./components/CustomerSupport";
-import Collaborative from "./components/Collaborative";
-import Members from "./components/Members";
-import Blogs from "./components/Blogs";
-import PricingTable from "./components/PricingTable";
-import Review from './components/Review'
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+
+import Home from './routers/Home'
+import Customers from './routers/Customers'
+import Pricing from './routers/Pricing'
+import Resources from './routers/Resources'
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Features />
-      <Management />
-      <CustomerSupport />
-      <Collaborative />
-      <Members />
-      <Blogs />
-      <PricingTable />
-      <Review />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/customers" element={<Customers />} />
+      <Route path="/pricing" element={<Pricing />} />
+      <Route path="/resources" element={<Resources />} />
+    </Routes>
   );
 }
 

@@ -1,5 +1,5 @@
-import SectionTitle from "../SectionTitle";
-import Button from "../Button";
+import SectionTitle from "../../../../components/SectionTitle";
+import Button from "../../../../components/Button";
 
 import "./index.scss";
 

@@ -1,7 +1,7 @@
-import { ReactComponent as Logo } from "../../assets/logo-light.svg";
-import { ReactComponent as FacebookIcon } from "../../assets/facebook.svg";
-import { ReactComponent as InstagramIcon } from "../../assets/instagram.svg";
-import { ReactComponent as TwitterIcon } from "../../assets/twitter.svg";
+import { ReactComponent as Logo } from "src/assets/logo-light.svg";
+import { ReactComponent as FacebookIcon } from "src/assets/facebook.svg";
+import { ReactComponent as InstagramIcon } from "src/assets/instagram.svg";
+import { ReactComponent as TwitterIcon } from "src/assets/twitter.svg";
 
 import Button from "../Button";
 

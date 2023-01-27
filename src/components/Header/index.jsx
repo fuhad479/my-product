@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 import { HamburgerMenuIcon, SunIcon } from "@radix-ui/react-icons";
-import { ReactComponent as LightLogo } from "../../assets/logo-light.svg";
+import { ReactComponent as LightLogo } from "src/assets/logo-light.svg";
 
 import Button from "../Button";
 
@@ -17,16 +19,16 @@ export default function Header() {
             <nav className="navigation">
               <ul className="navigation-list">
                 <li className="navigation-item">
-                  <a href="/">Product</a>
+                  <Link to="/">Product</Link>
                 </li>
                 <li className="navigation-item">
-                  <a href="/">Customers</a>
+                  <Link to="/customers">Customers</Link>
                 </li>
                 <li className="navigation-item">
-                  <a href="/">Pricing</a>
+                  <Link to="/pricing">Pricing</Link>
                 </li>
                 <li className="navigation-item">
-                  <a href="/">Resources</a>
+                  <Link to="/resources">Resources</Link>
                 </li>
               </ul>
               <div className="button-group">

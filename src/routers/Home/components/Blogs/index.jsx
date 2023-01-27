@@ -1,8 +1,8 @@
 import { Pagination, Thumbs, Grid } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SectionTitle from "../SectionTitle";
-import BlogCard from "../BlogCard";
+import SectionTitle from "../../../../components/SectionTitle";
+import BlogCard from "../../../../components/BlogCard";
 
 import "swiper/css";
 import "swiper/css/thumbs";

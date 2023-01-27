@@ -1,5 +1,5 @@
-import SectionTitle from "../SectionTitle";
-import PricingCard from "../PricingCard";
+import SectionTitle from "../../../../components/SectionTitle";
+import PricingCard from "../../../../components/PricingCard";
 
 import "./index.scss";
 

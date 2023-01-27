@@ -1,20 +1,20 @@
-import { ReactComponent as ImageFolder } from "../../assets/image-folder.svg";
+import { ReactComponent as Documents } from "src/assets/documents.svg";
 
-import SectionTitle from "../SectionTitle";
+import SectionTitle from "../../../../components/SectionTitle";
 
 import "./index.scss";
 
-export default function Collaborative() {
+export default function Management() {
   return (
-    <section className="collaborative">
+    <section className="management">
       <div className="container">
-        <div className="collaborative-content">
-          <div className="collaborative-left">
-            <ImageFolder width="100%" height="100%" />
+        <div className="management-content">
+          <div className="management-left">
+            <Documents width="100%" height="100%" />
           </div>
-          <div className="collaborative-right">
-            <h4 className="subtitle">Optimisation for</h4>
-            <SectionTitle>Collaborative</SectionTitle>
+          <div className="management-right">
+            <h4 className="subtitle">Effortless Validation for</h4>
+            <SectionTitle>Management</SectionTitle>
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
