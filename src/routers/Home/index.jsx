@@ -1,3 +1,5 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 import Header from "../../components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -12,7 +14,10 @@ import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>MyProduct - Home</title>
+      </Helmet>
       <Header />
       <Hero />
       <Features />
@@ -24,6 +29,6 @@ export default function Home() {
       <PricingTable />
       <Review />
       <Footer />
-    </>
+    </HelmetProvider>
   );
 }
