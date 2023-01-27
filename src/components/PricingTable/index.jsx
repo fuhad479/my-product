@@ -41,7 +41,7 @@ export default function PricingTable() {
             </div>
             <div className="pricing-item">
               <PricingCard
-                plan="Free"
+                plan="Premium"
                 brief="Brief price description"
                 planAmount={10}
                 planDuration="Per / month"
