@@ -1,4 +1,4 @@
-@import '../../../../styles/colors';
+@import 'src/styles/colors';
 
 .features {
   padding: 3.125rem 0;
@@ -33,22 +33,6 @@
         text-align: center;
         @media screen and (min-width: 768px) {
           text-align: left;
-        }
-        .icon {
-          width: 50px;
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: $primaryColor;
-          border-radius: 1.1875rem;
-          margin: 0 auto 1.5rem;
-          @media screen  and (min-width: 768px) {
-            margin: 0 0 1rem;
-          }
-          @media screen  and (min-width: 992px) {
-            margin: 0 0 1rem;
-          }
         }
         .feature-title {
           margin-bottom: .625rem;
