@@ -15,7 +15,7 @@ export default function CustomerSupport() {
           </div>
           <div className="customer-support-right">
             <h4 className="subtitle">Easier decision making for</h4>
-            <SectionTitle>Customer Support</SectionTitle>
+            <SectionTitle title="Customer Support" />
             <p className="">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall

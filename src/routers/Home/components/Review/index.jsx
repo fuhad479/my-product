@@ -8,11 +8,10 @@ export default function Review() {
     <section className="review">
       <div className="container">
         <div className="review-content">
-          <SectionTitle>What Clients Say</SectionTitle>
-          <div className="subtitle">
-            Problems trying to resolve the conflict between the two major realms
-            of Classical physics: Newtonian mechanics{" "}
-          </div>
+          <SectionTitle
+            title="What Clients Say"
+            subtitle="Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics"
+          />
           <div className="review-list">
             <div className="review-item">
               <ReviewCard />

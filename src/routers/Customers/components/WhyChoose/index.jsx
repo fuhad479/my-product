@@ -12,7 +12,7 @@ export default function WhyChoose() {
     <section className="why-choose">
       <div className="container">
         <div className="why-choose-content">
-          <SectionTitle>Why Choose Product?</SectionTitle>
+          <SectionTitle title="Why Choose Product?" />
           <div className="choose-list">
             <div className="choose-item">
               <Card icon={<PointerIcon width={16} height={16} fill="#FFF" />} />

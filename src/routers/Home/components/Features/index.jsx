@@ -14,7 +14,7 @@ export default function Features() {
     <section className="features">
       <div className="container">
         <div className="features-content">
-          <SectionTitle>Product was Built Specifically for You</SectionTitle>
+          <SectionTitle title="Product was Built Specifically for You" />
           <div className="features-list">
             <div className="features-item">
               <Icon>

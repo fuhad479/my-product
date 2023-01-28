@@ -8,11 +8,10 @@ export default function Members() {
     <section className="members">
       <div className="container">
         <div className="members-content">
-          <SectionTitle>Quick & Easy Process</SectionTitle>
-          <p className="subtitle">
-            Do you require some help for your project: Conception workshop,
-            prototyping, marketing strategy, landing page, Ux/UI?
-          </p>
+          <SectionTitle
+            title="Quick & Easy Process"
+            subtitle="Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?"
+          />
           <div className="members-list">
             <div className="member-item">
               <div className="avatar">

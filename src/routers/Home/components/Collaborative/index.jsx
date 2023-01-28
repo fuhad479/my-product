@@ -14,7 +14,7 @@ export default function Collaborative() {
           </div>
           <div className="collaborative-right">
             <h4 className="subtitle">Optimisation for</h4>
-            <SectionTitle>Collaborative</SectionTitle>
+            <SectionTitle title="Collaborative" />
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall

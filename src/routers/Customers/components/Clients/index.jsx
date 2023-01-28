@@ -12,7 +12,7 @@ export default function Clients() {
     <section className="customers">
       <div className="container">
         <div className="customers-content">
-          <SectionTitle>Our Clients</SectionTitle>
+          <SectionTitle title="Our Clients"></SectionTitle>
           <div className="client-list">
             <div className="client-item">
               <img src={airbnbLogo} alt="" />

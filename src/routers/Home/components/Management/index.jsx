@@ -14,7 +14,7 @@ export default function Management() {
           </div>
           <div className="management-right">
             <h4 className="subtitle">Effortless Validation for</h4>
-            <SectionTitle>Management</SectionTitle>
+            <SectionTitle title="Management" />
             <p>
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall

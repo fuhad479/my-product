@@ -11,7 +11,7 @@ export default function Steps() {
     <section className="steps">
       <div className="container">
         <div className="steps-content">
-          <SectionTitle>How Product Work?</SectionTitle>
+          <SectionTitle title="How Product Work?" />
           <div className="steps-list">
             <div className="step-item step-one">
               <div className="step-preview">

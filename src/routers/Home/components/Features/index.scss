@@ -10,11 +10,8 @@
   }
   &-content {
     .section-title {
-      text-align: center;
-      margin-bottom: 3.125rem;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 4.125rem;
-      }
+      max-width: 100%;
+      margin-bottom: 3.75rem;
     }
     .features-list {
       display: grid;

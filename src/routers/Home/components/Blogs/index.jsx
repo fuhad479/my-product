@@ -12,19 +12,18 @@ import "./index.scss";
 
 export default function Blogs() {
   const sliderBreakpoints = {
-    "768": { slidesPerView: 2 },
-    "992": { slidesPerView: 3 },
+    768: { slidesPerView: 2 },
+    992: { slidesPerView: 3 },
   };
 
   return (
     <section className="blogs">
       <div className="container">
         <div className="blogs-content">
-          <SectionTitle>Contents Strategies</SectionTitle>
-          <p className="subtitle">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
-          </p>
+          <SectionTitle
+            title="Contents Strategies"
+            subtitle="We focus on ergonomics and meeting you where you work. It's only a keystroke away."
+          />
           <Swiper
             modules={[Pagination, Thumbs, Grid]}
             spaceBetween={32}

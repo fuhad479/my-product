@@ -8,8 +8,10 @@ export default function PricingTable() {
     <section className="pricing-table">
       <div className="container">
         <div className="pricing-table-content">
-          <SectionTitle>Price Table</SectionTitle>
-          <p className="subtitle">We offer competitive price</p>
+          <SectionTitle
+            title="Price Table"
+            subtitle="We offer competitive price"
+          />
           <div className="pricing-list">
             <div className="pricing-item">
               <PricingCard
