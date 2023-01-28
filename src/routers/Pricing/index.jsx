@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Header from "src/components/Header";
 import PricingTable from "../Home/components/PricingTable";
+import CTA from './CTA'
 import Footer from "src/components/Footer";
 
 export default function Pricing() {
@@ -12,6 +13,7 @@ export default function Pricing() {
       </Helmet>
       <Header />
       <PricingTable />
+      <CTA />
       <Footer />
     </HelmetProvider>
   );

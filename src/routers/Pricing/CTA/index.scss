@@ -1,0 +1,14 @@
+.call-to-action {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 4.6875rem 0;
+  }
+  &-content {
+    h4 {
+      text-align: center;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}
