@@ -1,16 +1,14 @@
 import SectionTitle from "src/components/SectionTitle";
 import PricingCard from "src/components/PricingCard";
 
-import "./index.scss";
-
 export default function PricingTable() {
   return (
     <section className="pricing-table">
       <div className="container">
         <div className="pricing-table-content">
           <SectionTitle
-            title="Let’s get some real work done here."
-            subtitle="Prodict is your perfect solution for working. Get started now for free"
+            title="Price Table"
+            subtitle="We offer competitive price"
           />
           <div className="pricing-list">
             <div className="pricing-item">
@@ -59,5 +57,5 @@ export default function PricingTable() {
         </div>
       </div>
     </section>
-  );
+  ) 
 }
