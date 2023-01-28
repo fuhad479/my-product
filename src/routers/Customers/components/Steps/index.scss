@@ -1,0 +1,42 @@
+.steps {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 4.6875rem 0;
+  }
+  &-content {
+    .section-title {
+      text-align: center;
+      margin: 0 auto 2rem;
+    }
+    .steps-list {
+      .step-item {
+        margin-bottom: 3.125rem;
+        @media screen and (min-width: 768px) {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+          &.step-two {
+            flex-direction: row-reverse;
+          }
+          .step-preview {
+            margin-bottom: 0 !important;
+          }
+          .step-preview, .step-content {
+            width: 100%;
+          }
+        }
+        .step-preview {
+          margin-bottom: 1.875rem;
+        }
+        .step-count {
+          display: block;
+        }
+        .step-count,
+        .step-title,
+        .step-brief {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
