@@ -1,0 +1,44 @@
+.product-usage {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 4.6875rem 0;
+  }
+  &-content {
+    .product-usage-columns {
+      @media screen and (min-width: 992px){
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+      .product-usage-left {
+        margin-bottom: 2rem;
+      @media screen and (min-width: 992px){
+      width: 100%;
+      margin-bottom: 0;
+      }
+      }
+      .product-usage-right {
+      @media screen and (min-width: 992px){
+      width: 100%;
+      }
+        .usage {
+          &:not(:last-child){ 
+            margin-bottom: 1.5rem;
+          }
+          .icon-title{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

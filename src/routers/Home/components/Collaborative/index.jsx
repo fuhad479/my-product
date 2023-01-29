@@ -1,6 +1,6 @@
 import { ReactComponent as ImageFolder } from "src/assets/image-folder.svg";
 
-import SectionTitle from "../../../../components/SectionTitle";
+import SectionTitle from "src/components/SectionTitle";
 
 import "./index.scss";
 
