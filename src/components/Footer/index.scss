@@ -1,9 +1,15 @@
 .footer {
   padding: 3.125rem 0;
   &-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    @media screen and (min-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
     .social-icons {
+      margin-bottom: 2rem;
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+      }
       .logo {
         margin-bottom: 1.5rem;
         svg {
@@ -13,30 +19,34 @@
       .icons {
         display: flex;
         gap: 16px;
-        .icon {
+        .social-icon {
           width: 40px;
           height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #EDFFFC;
+          background: #edfffc;
           cursor: pointer;
         }
       }
     }
     .footer-menu {
+      margin-bottom: 2rem;
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+      }
       &-title {
         font-size: 1.25rem;
         font-weight: 600;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
     }
     .newsletter-form {
       input {
         width: 100%;
-        border: 1px solid #BCD0E5;
+        border: 1px solid #bcd0e5;
         border-radius: 4px;
-        padding: .625rem .9375rem;
+        padding: 0.625rem 0.9375rem;
         margin-bottom: 1.25rem;
         &:focus {
           outline: none;

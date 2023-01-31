@@ -17,13 +17,13 @@ export default function Footer() {
               <Logo width="100%" />
             </div>
             <div className="icons">
-              <div className="icon">
+              <div className="social-icon">
                 <InstagramIcon width={25} height={25} color="#02897A" />
               </div>
-              <div className="icon">
+              <div className="social-icon">
                 <FacebookIcon width={25} height={25} color="#02897A" />
               </div>
-              <div className="icon">
+              <div className="social-icon">
                 <TwitterIcon width={25} height={25} color="#02897A" />
               </div>
             </div>
