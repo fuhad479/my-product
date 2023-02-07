@@ -1,0 +1,33 @@
+.faq {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 768px) {
+    padding: 4.6875rem 0;
+  }
+  &-content {
+    .accordion {
+      &__heading {
+        cursor: pointer;
+      }
+      &__button {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        svg {
+          width: 24px;
+          height  : 24px;
+        }
+        p {
+          width: calc(100% - 40px);
+        }
+      }
+      &__item {
+        border-bottom: 1px solid #e7e7e7;
+        padding: 0.75rem 0;
+      }
+      &__panel {
+        margin-top: 0.875rem;
+      }
+    }
+  }
+}
