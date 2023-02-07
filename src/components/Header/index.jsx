@@ -27,9 +27,9 @@ export default function Header() {
                 <li className="navigation-item">
                   <Link to="/pricing">Pricing</Link>
                 </li>
-                <li className="navigation-item">
+                {/* <li className="navigation-item">
                   <Link to="/resources">Resources</Link>
-                </li>
+                </li> */}
               </ul>
               <div className="button-group">
                 <Button size="small" variant="outlined">
@@ -38,9 +38,9 @@ export default function Header() {
                 <Button size="small" variant="filled">
                   Sign Up
                 </Button>
-                <button type="button" className="theme-toggler-icon">
+                {/* <button type="button" className="theme-toggler-icon">
                   <SunIcon />
-                </button>
+                </button> */}
               </div>
             </nav>
             <button type="button" className="hamburger-icon">
