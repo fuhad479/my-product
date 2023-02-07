@@ -6,19 +6,19 @@ export default function ReviewCard() {
   return (
     <div className="review-card">
       <div className="rating">
-        <div className="icon">
+        <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />
         </div>
-        <div className="icon">
+        <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />
         </div>
-        <div className="icon">
+        <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />
         </div>
-        <div className="icon">
+        <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />
         </div>
-        <div className="icon">
+        <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />
         </div>
       </div>
