@@ -1,0 +1,104 @@
+@import "/src/styles/colors";
+
+.newsletter {
+  padding: 3.125rem 0;
+  @media screen and (min-width: 992px) {
+    padding: 4.6875rem 0;
+  }
+  &-content {
+    @media screen and (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    .newsletter-left {
+      @media screen and (min-width: 992px) {
+        width: 55%;
+      }
+    }
+    .newsletter-right {
+      @media screen and (min-width: 992px) {
+        width: 45%;
+      }
+    }
+    .newsletter-left {
+      margin-bottom: 3.125rem;
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+      }
+      .newsletter-title {
+        font-size: 2.1875rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 992px) {
+          font-size: 2.5rem;
+          text-align: left;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .newsletter-brief {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 992px) {
+          text-align: left;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .newsletter-field {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #eaeaea;
+        border-radius: 1000px;
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
+        input {
+          appearance: none;
+          width: calc(100% - 120px);
+          border: none;
+          padding-left: 1.25rem;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          background: $primaryColor;
+          color: $white;
+          border: none;
+          border-radius: 1000px;
+          padding: 0.8125rem 1.5rem;
+        }
+      }
+      .our-members {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        @media screen and (min-width: 992px) {
+          justify-content: flex-start;
+        }
+        .avatars {
+          display: flex;
+          position: relative;
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border: 0.25rem solid $white;
+            border-radius: 100%;
+            &:not(:first-child) {
+              margin-left: -1.5625rem;
+            }
+          }
+        }
+        span {
+          font-size: 0.875rem;
+          span {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}
