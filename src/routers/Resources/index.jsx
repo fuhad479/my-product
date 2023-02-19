@@ -4,6 +4,7 @@ import Header from "src/components/Header";
 import Newsletter from "./components/Newsletter";
 import Blogs from "./components/Blogs";
 import Maps from "./components/Maps";
+import ContactForm from "./components/ContactForm";
 import Footer from "src/components/Footer";
 
 export default function Resources() {
@@ -16,6 +17,7 @@ export default function Resources() {
       <Newsletter />
       <Blogs />
       <Maps />
+      <ContactForm />
       <Footer />
     </HelmetProvider>
   );

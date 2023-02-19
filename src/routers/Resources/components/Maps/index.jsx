@@ -16,10 +16,9 @@ export default function Maps() {
           title="map"
           style={{ border: 0 }}
           loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBrrBcRMgKM96kFBiOTJH3SEbXMKk4jYFU
-    &q=Space+Needle,Seattle+WA"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          src={`https://www.google.com/maps/embed/v1/view?key=${process.env.REACT_APP_MAPS_API_KEY}&zoom=13&center=22.8459799,89.5382598&maptype=roadmap`}
         ></iframe>
       </div>
     </section>
