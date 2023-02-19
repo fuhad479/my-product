@@ -18,8 +18,6 @@ export default function CustomAccordionItem({
 }) {
   const [currentUuid, setCurrentUuid] = useState("1");
 
-  console.log(currentUuid, activeUuid);
-
   return (
     <AccordionItem uuid={uuid}>
       <AccordionItemHeading

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
 import { ReactComponent as LightLogo } from "src/assets/logo-light.svg";
 
 import Button from "../Button";
 
 import "./index.scss";
 
-export default function Header() {
+export default function Header({ open, setOpen }) {
   return (
     <header className="header">
       <div className="container">
@@ -43,8 +43,16 @@ export default function Header() {
                 </button> */}
               </div>
             </nav>
-            <button type="button" className="hamburger-icon">
-              <HamburgerMenuIcon width={25} height={25} />
+            <button
+              type="button"
+              className="hamburger-icon"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? (
+                <Cross1Icon width={25} height={25} />
+              ) : (
+                <HamburgerMenuIcon width={25} height={25} />
+              )}
             </button>
           </div>
         </div>
