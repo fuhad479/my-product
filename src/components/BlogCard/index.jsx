@@ -1,8 +1,14 @@
+import { useContext } from "react";
+
+import { AppContext } from "src/context";
+
 import "./index.scss";
 
 export default function BlogCard({ thumbnail, author, date, title }) {
+  const { theme } = useContext(AppContext);
+
   return (
-    <div className="blog-card">
+    <div className={`blog-card ${theme === "dark" ? "dark" : ""}`}>
       <img
         className="thumbnail"
         src={thumbnail}

@@ -1,3 +1,7 @@
+import { useContext } from "react";
+
+import { AppContext } from "src/context";
+
 import Button from "../Button";
 
 import "./index.scss";
@@ -9,8 +13,10 @@ export default function PricingCard({
   planDuration,
   children,
 }) {
+  const { theme } = useContext(AppContext);
+
   return (
-    <div className="pricing-card">
+    <div className={`pricing-card ${theme === "dark" ? "dark" : ""}`}>
       <h3 className="plan-title">{plan}</h3>
       <p className="plan-brief">{brief}</p>
       <div className="pricing">
@@ -21,7 +27,9 @@ export default function PricingCard({
         </div>
       </div>
       {children}
-      <Button size="small" variant="filled">Order Now</Button>
+      <Button size="small" variant="filled">
+        Order Now
+      </Button>
     </div>
   );
 }

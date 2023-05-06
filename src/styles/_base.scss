@@ -9,6 +9,10 @@
 body {
   font-family: "Poppins", sans-serif;
   color: $typographyColor;
+  &.dark {
+    background: $typographyColor;
+    color: $white;
+  }
   &.no-scroll {
     overflow: hidden;
   }

@@ -1,4 +1,9 @@
-import { ReactComponent as Logo } from "src/assets/logo-light.svg";
+import { useContext } from "react";
+
+import { AppContext } from "src/context";
+
+import { ReactComponent as LightLogo } from "src/assets/logo-light.svg";
+import { ReactComponent as DarkLogo } from "src/assets/logo-dark.svg";
 import { ReactComponent as FacebookIcon } from "src/assets/facebook.svg";
 import { ReactComponent as InstagramIcon } from "src/assets/instagram.svg";
 import { ReactComponent as TwitterIcon } from "src/assets/twitter.svg";
@@ -8,13 +13,15 @@ import Button from "../Button";
 import "./index.scss";
 
 export default function Footer() {
+  const { theme } = useContext(AppContext);
+
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="social-icons">
             <div className="logo">
-              <Logo width="100%" />
+              {theme === "dark" ? <DarkLogo /> : <LightLogo />}
             </div>
             <div className="icons">
               <div className="social-icon">
@@ -51,7 +58,9 @@ export default function Footer() {
               knowing you're always on the best energy deal.{" "}
             </h4>
             <input type="text" />
-            <Button size="small" variant="filled">Sign up Now</Button>
+            <Button size="small" variant="filled">
+              Sign up Now
+            </Button>
           </div>
         </div>
       </div>

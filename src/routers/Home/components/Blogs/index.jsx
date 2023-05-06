@@ -1,5 +1,9 @@
+import { useContext } from "react";
+
 import { Pagination, Thumbs, Grid } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { AppContext } from "src/context";
 
 import SectionTitle from "../../../../components/SectionTitle";
 import BlogCard from "../../../../components/BlogCard";
@@ -16,8 +20,10 @@ export default function Blogs() {
     992: { slidesPerView: 3 },
   };
 
+  const { theme } = useContext(AppContext);
+
   return (
-    <section className="blogs">
+    <section className={`blogs ${theme === "dark" ? "dark" : ""}`}>
       <div className="container">
         <div className="blogs-content">
           <SectionTitle

@@ -1,10 +1,16 @@
+import { useContext } from "react";
+
+import { AppContext } from "src/context";
+
 import { StarIcon } from "@radix-ui/react-icons";
 
 import "./index.scss";
 
 export default function ReviewCard() {
+  const { theme } = useContext(AppContext);
+
   return (
-    <div className="review-card">
+    <div className={`review-card ${theme === "dark" ? "dark" : ""}`}>
       <div className="rating">
         <div className="star-icon">
           <StarIcon width={18} height={18} color="#F3CD03" />

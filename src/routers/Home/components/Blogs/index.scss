@@ -1,5 +1,16 @@
+@import "src/styles/_colors";
+
 .blogs {
   padding: 3.125rem 0;
+  &.dark {
+    .swiper-pagination-bullet {
+      background: #EFEFEF;
+      opacity: 1;
+      &-active {
+        background: #02897a;
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
     padding: 6.25rem 0;
   }
@@ -25,7 +36,7 @@
         height: 16px;
         background: gray;
         &-active {
-          background: #02897A;
+          background: #02897a;
         }
       }
     }

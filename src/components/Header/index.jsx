@@ -1,27 +1,42 @@
+import { useContext } from "react";
+
 import { Link } from "react-router-dom";
 
-import { HamburgerMenuIcon, Cross1Icon } from "@radix-ui/react-icons";
+import { AppContext } from "src/context";
+import {
+  HamburgerMenuIcon,
+  Cross1Icon,
+  SunIcon,
+  MoonIcon,
+} from "@radix-ui/react-icons";
 import { ReactComponent as LightLogo } from "src/assets/logo-light.svg";
+import { ReactComponent as DarkLogo } from "src/assets/logo-dark.svg";
 
 import Button from "../Button";
 
 import "./index.scss";
 
 export default function Header({ open, setOpen }) {
-  window.addEventListener('scroll', () => {
+  const { theme, setTheme } = useContext(AppContext);
+
+  window.addEventListener("scroll", () => {
     if (window.scrollY >= 80) {
-      document.querySelector('header').classList.add('sticky')
+      document.querySelector("header").classList.add("sticky");
     } else {
-      document.querySelector('header').classList.remove('sticky')
+      document.querySelector("header").classList.remove("sticky");
     }
-  })
+  });
 
   return (
-    <header className="header">
+    <header
+      className={`header ${window.scrollY >= 80 ? "sticky" : ""} ${
+        theme === "dark" ? "dark" : ""
+      }`}
+    >
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <LightLogo />
+            {theme === "dark" ? <DarkLogo /> : <LightLogo />}
           </div>
           <div className="navigation-wrapper">
             <nav className="navigation">
@@ -46,9 +61,13 @@ export default function Header({ open, setOpen }) {
                 <Button size="small" variant="filled">
                   Sign Up
                 </Button>
-                {/* <button type="button" className="theme-toggler-icon">
-                  <SunIcon />
-                </button> */}
+                <button
+                  type="button"
+                  className="theme-toggler-icon"
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                >
+                  {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+                </button>
               </div>
             </nav>
             <button

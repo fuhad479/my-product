@@ -2,7 +2,14 @@
 
 .header {
   box-shadow: 0 -0.125rem 0.5rem rgba(0, 0, 0, 0.25);
+  &.dark {
+    
+  }
   &.sticky {
+    &.dark {
+      background: $typographyColor;
+      color: $white;
+    }
     background: white;
     -webkit-animation: stickyHeader 0.8s ease-in-out forwards;
     animation: stickyHeader 0.8s ease-in-out forwards;

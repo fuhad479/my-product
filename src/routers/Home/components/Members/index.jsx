@@ -1,9 +1,15 @@
+import { useContext } from "react";
+
+import { AppContext } from "src/context";
+
 import SectionTitle from "../../../../components/SectionTitle";
 import Button from "../../../../components/Button";
 
 import "./index.scss";
 
 export default function Members() {
+  const { theme } = useContext(AppContext);
+
   return (
     <section className="members">
       <div className="container">
@@ -13,7 +19,7 @@ export default function Members() {
             subtitle="Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?"
           />
           <div className="members-list">
-            <div className="member-item">
+            <div className={`member-item ${theme === 'dark' ? 'dark' : ''}`}>
               <div className="avatar">
                 <img
                   src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -22,7 +28,7 @@ export default function Members() {
               </div>
               <div className="motive">I can take care of your pitch</div>
             </div>
-            <div className="member-item">
+            <div className={`member-item ${theme === 'dark' ? 'dark' : ''}`}>
               <div className="avatar">
                 <img
                   src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
@@ -33,7 +39,7 @@ export default function Members() {
             </div>
           </div>
           <div className="members-list">
-            <div className="member-item">
+            <div className={`member-item ${theme === 'dark' ? 'dark' : ''}`}>
               <div className="avatar">
                 <img
                   src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -42,7 +48,7 @@ export default function Members() {
               </div>
               <div className="motive">I can take care of your pitch</div>
             </div>
-            <div className="member-item">
+            <div className={`member-item ${theme === 'dark' ? 'dark' : ''}`}>
               <div className="avatar">
                 <img
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"

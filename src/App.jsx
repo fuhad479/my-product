@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState, useContext } from "react";
 
 import { Routes, Route } from "react-router-dom";
+
+import { AppContext } from "./context";
 
 import Header from "src/components/Header";
 import Home from "src/routers/Home";
@@ -13,9 +15,19 @@ import Footer from "src/components/Footer";
 function App() {
   const [open, setOpen] = useState(false);
 
+  const { theme } = useContext(AppContext);
+
   window.ontouchmove = (event) => {
     event.view.moveBy(0, 0);
   };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [theme]);
 
   return (
     <>

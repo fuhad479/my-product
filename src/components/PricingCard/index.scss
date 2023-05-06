@@ -5,6 +5,10 @@
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   padding: 2rem;
+  &.dark {
+    background: $white;
+    color: $typographyColor;
+  }
   .plan-title {
     font-size: 1.5rem;
   }

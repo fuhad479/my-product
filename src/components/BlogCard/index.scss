@@ -1,6 +1,12 @@
+@import 'src/styles/_colors';
+
 .blog-card {
   border-radius: 8px;
   overflow: hidden;
+  &.dark {
+    background: $white;
+    color: $typographyColor;
+  }
   .thumbnail {
     object-fit: cover;
   }
@@ -9,7 +15,9 @@
     border-left: 1px solid #dedede;
     border-right: 1px solid #dedede;
     border-bottom: 1px solid #dedede;
-    border-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-collapse: collapse;
     & > div {
       & * {
         display: inline;
