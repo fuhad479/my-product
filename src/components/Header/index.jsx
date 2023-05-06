@@ -8,6 +8,14 @@ import Button from "../Button";
 import "./index.scss";
 
 export default function Header({ open, setOpen }) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 80) {
+      document.querySelector('header').classList.add('sticky')
+    } else {
+      document.querySelector('header').classList.remove('sticky')
+    }
+  })
+
   return (
     <header className="header">
       <div className="container">
