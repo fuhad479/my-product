@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import Hero from "./components/Hero";
@@ -11,6 +13,10 @@ import PricingTable from "./components/PricingTable";
 import Review from "./components/Review";
 
 export default function Home() {
+  useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <HelmetProvider>
       <Helmet>
