@@ -16,7 +16,7 @@ import Button from "../Button";
 
 import "./index.scss";
 
-export default function Header({ open, setOpen }) {
+export default function Header({ open, setOpen, setSignup, setSignin }) {
   const { theme, setTheme } = useContext(AppContext);
 
   window.addEventListener("scroll", () => {
@@ -55,10 +55,18 @@ export default function Header({ open, setOpen }) {
                 </li>
               </ul>
               <div className="button-group">
-                <Button size="small" variant="outlined">
+                <Button
+                  size="small"
+                  variant="outlined"
+                  onClick={() => setSignin((s) => !s)}
+                >
                   Sign In
                 </Button>
-                <Button size="small" variant="filled">
+                <Button
+                  size="small"
+                  variant="filled"
+                  onClick={() => setSignup((s) => !s)}
+                >
                   Sign Up
                 </Button>
                 <button

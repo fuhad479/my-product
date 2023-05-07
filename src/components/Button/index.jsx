@@ -4,7 +4,7 @@ import { AppContext } from "src/context";
 
 import "./index.scss";
 
-export default function Button({ children, size, variant }) {
+export default function Button({ children, size, variant, onClick }) {
   const { theme } = useContext(AppContext);
 
   const buttonSize = size === "small" ? "button-small" : "button-large";
@@ -14,6 +14,7 @@ export default function Button({ children, size, variant }) {
   return (
     <button
       type="button"
+      onClick={onClick}
       className={`button ${buttonSize} ${buttonVariant} ${
         theme === "dark" ? "dark" : ""
       }`}
